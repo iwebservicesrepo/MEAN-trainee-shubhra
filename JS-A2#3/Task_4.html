@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Find and Filter</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let employee =[ { 
+                    name : "Bob",
+                    age : 36
+                },
+                {
+                    name : "David",
+                   age : 25
+                },
+                {
+                    name : "Steve",
+                    age : 22
+                },
+                {
+                    name : "Stewie",
+                    age:19
+                }];
+                
+                let char = "S";
+                let age = 35;
+
+                let empAge = employee.find(function(emp){
+                    return emp.age<35;
+                });
+                console.log(empAge)
+
+                let empName = employee.find(function(emp){
+                    return emp.name[0]==char;
+                });
+                console.log(empName)
+
+                let fEmpAge = employee.filter(function(emp){
+                    return emp.age<35;
+                });
+                console.log(fEmpAge);
+
+                let fEmpName = employee.filter(function(emp){
+                    return emp.name[0]==char;
+                });
+                console.log(fEmpName);
+            </script>
+        </body>
+    </main>
+</html>

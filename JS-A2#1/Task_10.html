@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Print Big1, Big2, or Equal among the 2 given Array</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                const arr1 = [111,20,30];
+                const arr2 = [10,20,30];
+
+                function SUM(arr){
+                    let sum=0;
+                    for(let i=0; i<arr.length; i++){
+                        sum += arr[i];
+                    }
+                    return sum;
+                }
+
+                if(SUM(arr1)>SUM(arr2)){
+                    console.log("Big1")
+                }
+                else if(SUM(arr2)>SUM(arr1)){
+                    console.log("Big2")
+                }
+                else{
+                    console.log("Equal");
+                }
+
+            </script>
+        </body>
+    </main>
+</html>

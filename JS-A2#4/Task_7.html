@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Map</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                const arr = [{"name" : "Mark", "age" : 23},{"name" : "Steve", "age" : 28},{"name" : "Mary", "age" : 25},{"name" : "Bill", "age" : 34}];
+
+                let newArr = arr.map(function(string){
+                    let name = string.name;
+                    let age = string.age;
+                    return name +" is "+ age +" years old";
+                });
+                console.log(newArr)
+            </script>
+        </body>
+    </main>
+</html>

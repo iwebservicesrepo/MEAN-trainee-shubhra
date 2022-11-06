@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Reduce</title>
+        </head>
+    </header>
+    <main>
+        <body>
+           <script>
+            const arr = [1,2,3,4,5,11,12];
+
+            let sumArr = arr.reduce(function(acc,cv){
+                return acc+cv;
+            },0);
+
+            console.log(sumArr)
+           </script>
+
+           <script>
+            let prodArr = arr.reduce(function(acc,cv){
+                return acc*cv;
+            },1);
+            console.log(prodArr)
+           </script>
+
+           <script>
+            let max = arr.reduce(function(acc,cv){
+                if(cv>acc)
+                    return cv;
+                else
+                    return acc;  
+            },0);
+
+            console.log(max)
+           </script>
+
+           <script>
+            let smallest = arr.reduce(function(acc,cv){
+                if(acc>cv)
+                    return cv;
+                else
+                    return acc;
+            });
+
+            console.log(smallest)
+           </script>
+        </body>
+    </main>
+</html>

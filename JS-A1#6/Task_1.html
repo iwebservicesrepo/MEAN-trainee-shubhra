@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Largest, Replace, Square, Factorial</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                function largest(a,b,c){
+                    if(a>b && a>c){
+                        console.log("A is Largest",a);
+                    }
+                    else if(b>a && b>c){
+                        console.log("B is Largest",b);
+                    }
+                    else{
+                        console.log("C is Largest",c);
+                    }
+                    return a,b,c;
+                }
+                console.log(largest(69,78,3));
+            </script>
+            <script>
+                function Replace(str,char1,char2){
+                    let replaced = "";
+                    for(let i=0; i<=str.length; i++){
+                        if(str[i]==char1){
+                            replaced += char2;
+                        }
+                        else{
+                            replaced += str[i];
+                        }
+                    }
+                    return replaced;
+                }
+                console.log(Replace("Shubhra","h","a"));
+            </script>
+            <script>
+                function Square(num){
+                    for(let i=1; i<=num; i++){
+                        let sq = i*i;
+                        if(sq==num){
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+                console.log(Square(15));
+            </script>
+            <script>
+                function factorial(num){
+                    let fact=1;
+                    for(let i=1; i<=num; i++){
+                        fact = fact*i;
+                    }
+                    return fact;
+                }
+                console.log(factorial(5));
+            </script>
+        </body>
+    </main>
+</html>

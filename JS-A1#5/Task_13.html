@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Re-Arranging String</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let str="9#a$M%2eP";
+                let startStr="";
+                let midStr="";
+                let endStr="";
+                let finalStr="";
+
+                for(let i=0; i<=str.length; i++){
+                    let ch = str[i];
+
+                    if(ch>="a" && ch<="z"){
+                        startStr += ch;
+                    }
+                    if(ch>="A" && ch<="Z"){
+                        endStr += ch;
+                    }
+                    if(ch>="0" && ch<="9"){
+                        midStr += ch;
+                    }
+                    finalStr = startStr+midStr+endStr;
+                }
+                console.log(finalStr);
+            </script>
+        </body>
+    </main>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Non-Alphabets and Digits</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let str="q#w2@B**5g";
+                let doNothing="";
+                let nonStr="";
+
+                for(let i=0; i<=str.length; i++){
+                    let ch = str[i];
+
+                    if(ch>="a" && ch<="z" || ch>="A" && ch<="Z" || ch>="0" && ch<="9"){
+                        doNothing += ch;
+                    }
+                    else{
+                        nonStr += ch;
+                    }
+                }
+                console.log(nonStr);
+            </script>
+        </body>
+    </main>
+</html>

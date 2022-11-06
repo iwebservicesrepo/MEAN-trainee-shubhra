@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Even String Divided is Equal or Not</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+              let str='dada';
+
+              if(str.length%2==0){
+
+              let half = str.length/2;
+              let firstHalf = str.substring(0,half);
+              let secondHalf = str.substring(half);
+
+              if(firstHalf===secondHalf){
+                console.log("Yes");
+              }
+              else{
+                console.log("No");
+              }
+            }
+            
+            else{
+                console.log("Enter String with Even Length");
+            }
+                
+            </script>
+        </body>
+    </main>
+</html>

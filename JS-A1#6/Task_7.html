@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Returning -1,0,1 on the basis of Character 1&2</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                function Occurrence(str,char1,char2){
+                    let count1=0,count2=0;
+
+                    for(let i=0; i<str.length; i++){
+                        if(str[i]==char1)
+                            count1++;
+                        else if(str[i]==char2)
+                            count2++;
+                    }
+
+                    if(count1>count2)
+                        return 1;
+                    else if(count1<count2)
+                        return -1;
+                    else    
+                        return 0;
+            }
+                console.log(Occurrence("aaacdef","c","x"));
+            </script>
+        </body>
+    </main>
+</html>

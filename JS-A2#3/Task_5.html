@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Find,FindIndex,Filter</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                const arr = ['Hello', 'React', 'Java', 'Python', 'Hibernate', 'JavaScript','Javaa'];
+                
+                let end = arr.find(function(string){
+                    let endWith = string.endsWith("t");
+                    return endWith;
+                });
+                console.log(end);
+
+                let endIndex = arr.findIndex(function(string){
+                    let endWith = string.endsWith("t");
+                    return endWith;
+                });
+                console.log(endIndex);
+
+                let fEnd = arr.filter(function(string){
+                    let endWith = string.endsWith("t");
+                    return endWith;
+                });
+                console.log(fEnd);                
+            </script>
+            
+            <script>
+                let ch = "a";
+
+                function endsWith(string,char){
+                    return string.endsWith(char);
+                }
+
+                let end1 = arr.find(function(string){
+                    return endsWith(string,ch);
+                });
+                console.log(end1);
+
+                let endIndex1 = arr.findIndex(function(string){
+                    return string.endsWith(ch)
+                });
+                console.log(endIndex1);
+
+                let fEnd1 = arr.filter(function(string){
+                    return endsWith(string,ch);
+                });
+                console.log(fEnd1);
+            </script>
+
+            <script>
+                let ch1 = "y";
+
+                let find = arr.find(function(string){
+                     for(let i=0; i<arr.length; i++){
+                        
+                     }
+                });
+                
+            </script>
+        </body>
+    </main>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Filter</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+               const arr = [{"name":"Jack","tech":"Android"},{"name":"Mary","tech":"React"}, {"name":"Bob","tech":"Angular"},{"name":"Steve","tech":"Spring"}, {"name":"James","tech":"Android"},{"name":"Julia","tech":"Android"}, {"name":"Michel","tech":"React"},{"name":"Bill","tech":"Angular"}, {"name":"Sonny","tech":"Spring"},{"name":"Martins","tech":"React"}, {"name":"Bruce","tech":"Angular"},{"name":"Sam","tech":"Spring"}];
+
+               let str1 = "Bruce";
+               let str2 = "Android"; 
+               let boolean = false;
+
+               if(boolean==true){
+               let filterName = arr.filter(function(name){
+                return name.name==str1;
+               });
+               console.log(filterName);
+            }
+            else{
+                let filterTech = arr.filter(function(tech){
+                    return tech.tech==str2;
+                });
+                console.log(filterTech)
+            }
+            </script>
+        </body>
+    </main>
+</html>

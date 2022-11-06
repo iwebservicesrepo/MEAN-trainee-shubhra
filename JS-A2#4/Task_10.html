@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Map</title>
+        </head>
+    </header>
+    <main>
+        <body>
+           <script>
+            const arr = [{
+                "id" : "101",
+                "name" : "Mark"
+            },
+            {
+                "id" : "105",
+                "name" : "Steve"
+            },
+            {
+                "id" : "78",
+                "name" : "James"
+            }];
+
+            let newArr = arr.map(function(string){
+                let id = string.id;
+                let name = string.name;
+
+               return console.log("<p"+" class="+"'"+"id"+id+"'"+">"+name+"</p>");
+            });
+           </script>
+        </body>
+    </main>
+</html>

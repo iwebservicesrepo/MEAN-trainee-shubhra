@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Find and remove the name from the array</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                const arr = ['Jack','Bob','Ed','Steve'];
+                let name = "Ed";
+
+                for(let i=0; i<arr.length; i++){
+                    if(arr[i]==name){
+                       arr.splice(i,1);  
+                }
+            }
+                console.log(arr);
+            </script>
+        </body>
+    </main>
+</html>

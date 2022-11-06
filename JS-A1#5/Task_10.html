@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Printing Only Digits</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let str="SV91408981487986";
+                let digitStr="";
+                for(let i=0; i<=str.length; i++){
+                    let ch = str[i];
+                    if(ch>="0" && ch<="9"){
+                        digitStr += ch;
+                    }
+                }
+                console.log("Digits="+digitStr);
+            </script>
+        </body>
+    </main>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Map</title>
+        </head>
+    </header>
+    <main>
+        <body>
+           <script>
+            // Task - 12
+            const arr = [{"fname":"Jack","lname":"Smith","city":"London"},{"fname":"Mary","lname":"Markle","city":"Amsterdam"},{"fname":"Ed","lname":"May","city":"Paris"},{"fname":"Tim","lname":"Gates","city":"Rome"}];
+
+            let newArr1 = arr.map(function(string){
+                let cities = string.city;
+                return cities;
+            });
+
+            console.log(newArr1);
+           </script>
+
+           <script>
+            // Task - 13
+            let newArr2 = arr.map(function(string){
+                let firstName = string.fname;
+                let lastName = string.lname;
+                let fullName = firstName+" "+lastName;
+
+                let newJson = {fullname : fullName};
+
+                return newJson;
+            });
+
+            console.log(newArr2)
+           </script>
+        </body>
+    </main>
+</html>

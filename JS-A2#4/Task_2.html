@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Map</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                // Task - 2
+                const arr = [4,8,12,3,5,7];
+
+                let newArr1 = arr.map(function(num){
+                    return num*2;
+                });
+
+                console.log(newArr1);
+            </script>
+
+            <script>
+                // Task - 3
+                let newArr2 = arr.map(function(num){
+                    return num*num;
+                });
+
+                console.log(newArr2);
+            </script>
+
+            <script>
+                // Task - 4
+                let newArr3 = arr.map(function(num){
+                    if(num%2==0){
+                        return num;
+                    }
+                    else{
+                        return num*0;
+                    }
+                });
+
+                console.log(newArr3)
+            </script>
+
+            <script>
+                // Task - 5
+                let newArr4 = arr.map(function(num){
+                    if(num%2==0){
+                        return "Even";
+                    }
+                    else{
+                        return "Odd";
+                    }
+                });
+
+                console.log(newArr4);
+            </script>
+
+            <script>
+                // Task - 6
+                const arr1 = ["Hi","Hello","Bye"];
+
+                let newArr5 = arr1.map(function(string){
+                    return string.concat(string);
+                });
+
+                console.log(newArr5);
+            </script>
+        </body>
+    </main>
+</html>

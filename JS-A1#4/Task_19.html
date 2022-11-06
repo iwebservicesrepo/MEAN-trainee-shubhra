@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Divide and Non-Divide</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let n=9;
+                let div="";
+                let nDiv="";
+                for(let i=1; i<=n; i++){
+                    if(n%i==0){
+                        div = div+i+"#";
+                    }
+                    else{
+                        nDiv = nDiv+i+"#";
+                    }
+                }
+                console.log("Divide: "+div);
+                console.log("Not Divide: "+nDiv)
+            </script>
+        </body>
+    </main>
+</html>

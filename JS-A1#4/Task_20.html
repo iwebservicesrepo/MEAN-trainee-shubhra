@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Sum Of Digits</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+               let n = 1234;
+               let sum=0,remainder;
+
+               while(n!=0){
+                remainder = n%10;
+                sum = sum+remainder;
+                n = parseInt(n/10);
+               }
+               console.log(sum)
+            </script>
+        </body>
+    </main>
+</html>

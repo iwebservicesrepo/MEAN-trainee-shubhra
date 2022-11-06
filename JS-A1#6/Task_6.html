@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Reverse of String</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                function Reverse(str){
+                    let revStr="";
+                    for(let i=str.length; i>=0; i--){
+                        revStr += str[i];
+                    }
+                    return revStr;
+                }
+                
+                console.log(Reverse("Perfect"));
+            </script>
+        </body>
+    </main>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Remove character from string</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                function remove(str,char){
+                    removed="";a='';
+                    for(let i=0; i<str.length; i++){
+                        if(str[i]==char){
+                            str = str.replaceAll(char,"");
+                        }
+                    }
+                    return str;
+                }
+                console.log(remove("abcaabca","a"));
+            </script>
+        </body>
+    </main>
+</html>

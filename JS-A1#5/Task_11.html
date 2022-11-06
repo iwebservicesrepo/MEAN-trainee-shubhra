@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Replacing</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let str="qw23BN**45g";
+                
+                for(let i=0; i<=str.length; i++){
+                    let ch = str[i];
+                    if(ch>="A" && ch<="Z"){
+                        str = str.replaceAll(ch,"A");
+                    }
+                    if(ch>="a" && ch<="z"){
+                        str = str.replaceAll(ch,"a");
+                    }
+                    if(ch>="0" && ch<="9"){
+                        str = str.replaceAll(ch,"0");
+                    }  
+                }
+                console.log(str)
+            </script>
+        </body>
+    </main>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Count 'x' and 'y'</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                let str = "x+y+xy+4x";
+                let countX = 0;
+                let countY = 0;
+                for(let i=0; i<=str.length; i++){
+                    if(str[i]=="x"){
+                        countX++;
+                    }
+                    if(str[i]=="y"){
+                        countY++;
+                    }
+                }
+                console.log("x="+countX);
+                console.log("y="+countY);
+            </script>
+        </body>
+    </main>
+</html>

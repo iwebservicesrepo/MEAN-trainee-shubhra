@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Find,FindIndex,Filter</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+               const employees = [{"name":"Jack","country":"USA","age":35},{"name":"Amit","country":"India","age":38},{"name":"Edward","country":"USA","age":41},{"name":"Vishal","country":"India","age":30},{"name":"Annie","country":"USA","age":27},{"name":"Nick","country":"France","age":32},{"name":"Francis","country":"France","age":44},{"name":"Preeti","country":"India","age":25},{"name":"Sophie","country":"France","age":29},{"name":"Harpreet","country":"India","age":48},{"name":"Bob","country":"USA","age":21}];
+
+               let fCountry = employees.filter(function(country){
+                return country.country=="India";
+               });
+               console.log(fCountry);
+
+               let firstFind = employees.find(function(country){
+                return country.country=="India";
+               });
+               console.log(firstFind);
+
+               let firstFindIndex = employees.findIndex(function(country){
+                return country.country=="India";
+               });
+               console.log(firstFindIndex);
+            </script>
+
+            <script>
+                 let fCountryAge = employees.filter(function(country){
+                return country.country=="India" && country.age<35;
+               });
+               console.log(fCountryAge);
+
+               let firstFindCA = employees.find(function(country){
+                return country.country=="India" && country.age<35;
+               });
+               console.log(firstFindCA);
+
+               let firstFindIndexCA = employees.findIndex(function(country){
+                return country.country=="India" && country.age<35;
+               });
+               console.log(firstFindIndexCA);
+            </script>
+
+            <script>
+                let eitherCountry = employees.filter(function(country){
+                    return country.country=="India" || country.country=="USA";
+                });
+                console.log(eitherCountry);
+
+                let findEitherCountry = employees.find(function(country){
+                    return country.country=="India" || country.country=="USA";
+                });
+                console.log(findEitherCountry);
+
+                let findEitherCountryIndex = employees.findIndex(function(country){
+                    return country.country=="India" || country.country=="USA";
+                });
+                console.log(findEitherCountryIndex);
+            </script>
+
+            <script>
+                let minAge=40;
+
+                let fminAge = employees.filter(function(age){
+                    return age.age>minAge;
+                });
+                console.log(fminAge);
+
+                let firstminAge = employees.find(function(age){
+                    return age.age>minAge;
+                });
+                console.log(firstminAge);
+                
+                let firstminAgeIndex = employees.findIndex(function(age){
+                    return age.age>minAge;
+                });
+                console.log(firstminAgeIndex);
+            </script>
+
+            <script>
+                let str = "France";
+
+                let givenCountry = employees.filter(function(name){
+                    return name.country==str;
+                });
+                console.log(givenCountry);
+            </script>
+        </body>
+    </main>
+</html>

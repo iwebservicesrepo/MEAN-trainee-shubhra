@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Print ALLSAME if all the numbers in the array are the same otherwise print DIFFERENT</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                const arr = [12,12];
+                let flag=1;
+                for(let i=1; i<arr.length; i++){
+                    if(arr[i-1]==arr[i]){
+                        flag = 1;
+                    }
+                    else{
+                        flag = 0;
+                        break;
+                    }
+                    
+                }
+                if(flag==1){
+                    console.log("ALLSAME")
+                }
+                else{
+                    console.log("DIFFERENT")
+                }
+            
+            </script>
+        </body>
+    </main>
+</html>

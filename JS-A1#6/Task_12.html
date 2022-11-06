@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Returning the no. of Times a Character is Appeared</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                function Appears(str,char){
+                    let count=0;
+                    for(let i=0; i<=str.length; i++){
+                        let ch = str[i];
+
+                        if(char==ch){
+                            count++;
+                        }
+                    }
+                    return count;
+                }
+                console.log(Appears("Shubhra","h"));
+            </script>
+        </body>
+    </main>
+</html>

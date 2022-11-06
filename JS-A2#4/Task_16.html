@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Reduce</title>
+        </head>
+    </header>
+    <main>
+        <bod>
+           <script>
+                const arr = [{"name" : "Mark", "age" : 23},{"name" : "Steve", "age" : 28},{"name" : "Mary", "age" : 25},{"name" : "Bill", "age" : 34}];
+
+                let sumArr = arr.reduce(function(acc,cv){
+                    let sum = cv.age;
+                    return acc+sum;
+                },0);
+
+                console.log(sumArr);
+           </script>
+    </main>
+</html>

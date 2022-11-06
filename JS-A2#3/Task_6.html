@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Find,FindIndex,Filter</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+               const students = [{"name":"Jack","maths":55,"english":60,"science":62},{"name":"Anita","maths":62,"english":65,"science":56},{"name":"Thomas","maths":68,"english":72,"science":75},{"name":"Steve","maths":51,"english":56,"science":68},{"name":"Julia","maths":47,"english":77,"science":72},{"name":"Mary","maths":72,"english":55,"science":81}];
+
+               //Less than 50 Marks in Maths, its Index and Filter.
+
+               let mathMarks = students.find(function(marks){
+                return marks.maths<50;
+               });
+               console.log(mathMarks);
+
+               let mathMarksIndex = students.findIndex(function(marks){
+                return marks.maths<50;
+               });
+               console.log(mathMarksIndex)
+
+               let fMathMarks = students.filter(function(marks){
+                return marks.maths<50;
+               });
+               console.log(fMathMarks)
+            </script>
+
+            <script>
+                //Total Marks more than 200, its Index and Filter.
+
+                let total = 0;
+                for(let i=0; i<students.length; i++){
+                    total = students[i].english + students[i].maths + students[i].science;
+                    students[i].TotalMarks = total;
+                }
+             
+                let totalMarks = students.find(function(marks){
+                 return marks.TotalMarks>200
+                });
+                console.log(totalMarks)
+
+                let totalMarksIndex = students.findIndex(function(marks){
+                return marks.TotalMarks>200;
+                });
+                console.log(totalMarksIndex)
+
+                let fTotalMarks = students.filter(function(marks){
+                    return marks.TotalMarks>200;
+                });
+                console.log(fTotalMarks)
+            </script>
+
+            <script>
+                // More marks in Maths than English, its Index and Filter.
+
+                let moreMarks = students.find(function(marks){
+                   return marks.maths>marks.english;
+                });
+                console.log(moreMarks)
+
+                let moreMarksIndex = students.findIndex(function(marks){
+                    return marks.maths>marks.english;
+                });
+                console.log(moreMarksIndex)
+
+                let fMoreMarks = students.filter(function(marks){
+                    return marks.maths>marks.english;
+                });
+                console.log(fMoreMarks)
+            </script>
+
+            <script>
+                //Marks more than N and its Index.
+                let n=180;
+                
+                let moreThanN = students.find(function(marks){
+                    return marks.TotalMarks>n;
+                });
+                console.log(moreThanN)
+
+                let moreThanNIndex = students.findIndex(function(marks){
+                    return marks.TotalMarks>n;
+                });
+                console.log(moreThanNIndex)
+
+                let fMoreThanN = students.filter(function(marks){
+                    return marks.TotalMarks>n;
+                });
+                console.log(fMoreThanN);
+            </script>
+        </body>
+    </main>
+</html>

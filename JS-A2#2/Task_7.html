@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Performance of Students in the Exams</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+               let student1 = {
+                name : "Mark",
+                Maths : 80,
+                English : 75,
+                Science : 63
+               }
+               let student2 = {
+                name : "Bob",
+                Maths : 90,
+                English : 81,
+                Science : 88
+               }
+               let student3 = {
+                name : "Julia",
+                Maths : 88,
+                English : 87,
+                Science : 89
+               }
+               let student4 = {
+                name : "Anthony",
+                Maths : 60,
+                English : 64,
+                Science : 61
+               }
+               student1.Computers = 90;
+               student2.Computers = 81;
+               student3.Computers = 88;
+               student4.Computers = 70;
+
+               const studentArray = [student1,student2,student3,student4];
+
+               console.log(studentArray)
+            </script>
+
+            <script>
+                let total1=0;
+                for(let i=0; i<studentArray.length; i++){
+                    total1 = studentArray[i].English+studentArray[i].Maths+studentArray[i].Science+studentArray[i].Computers;
+                    studentArray[i].totalMarks = total1;
+                } 
+            </script>
+
+            <script>
+               let avg=0;
+                for(let i=0; i<studentArray.length; i++){
+                    avg = (studentArray[i].English+studentArray[i].Maths+studentArray[i].Science+studentArray[i].Computers)/4;
+                    studentArray[i].avgMarks = avg;
+                }
+            </script>
+
+            <script>
+                let max=0;
+                for(let i=0; i<studentArray.length; i++){
+                   let marks = studentArray[i];
+                   if(marks.English>marks.Maths && marks.English>marks.Science && marks.English>marks.Computers){
+                    max = marks.English;
+                   }
+                   else if(marks.Maths>marks.English && marks.Maths>marks.Science && marks.Maths>marks.Computers){
+                    max = marks.Maths;
+                   }
+                   else if(marks.Science>marks.English && marks.Science>marks.Maths && marks.Science>marks.Computers){
+                    max = marks.Science;
+                   }
+                   else{
+                    max = marks.Computers;
+                   }
+                   studentArray[i].maxMarks = max;
+                }
+            </script>
+
+            <script>
+                for(let i=0; i<studentArray.length; i++){
+                    if(studentArray[i].name=="Bob"){
+                        studentArray.splice(i,1);
+                    }
+                }
+            </script>
+        </body>
+    </main>
+</html>

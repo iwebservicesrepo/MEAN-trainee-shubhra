@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Shop</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+               let json1 = {
+                code : "PX101",
+                stock : 15,
+                price : 30
+               }
+
+               let json2 = {
+                code : "PX102",
+                stock : 24,
+                price : 30
+               }
+
+               let json3 = {
+                code : "PX103",
+                stock : 33,
+                price : 10
+               }
+               console.log(json1,json2,json3);
+            </script>
+            
+            <script>
+               const arrProduct = [json1,json2,json3];
+
+                let shop = {
+                    products : arrProduct
+                }
+
+                console.log(arrProduct);
+            </script>
+
+            <script>
+                let len = arrProduct.length;
+                let totalStock=0;
+                for(let i=0; i<len; i++){
+                    totalStock += arrProduct[i].stock
+                }
+                shop.totalStockQty = totalStock;
+                console.log(shop); 
+            </script>
+
+            <script>
+                let json4 = {
+                code : "PX104",
+                stock : 10,
+                price : 40
+                }
+                shop.products.push(json4);
+
+                
+            </script>
+        </body>
+    </main>
+</html>

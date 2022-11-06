@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Push and Unshift</title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script> //Task-17
+                const arr1 = [20,14,2,7,18];
+                let newArr1 = [];
+
+                for(let i=0; i<arr1.length; i++){
+                    if(arr1[i]%2==0){
+                        newArr1.push(arr1[i]);
+                    }
+                }
+                console.log(newArr1);
+            
+            </script>
+            <script> //Task-18
+                const arr2 = [20,14,2,7,18];
+                let newArr2 = [];
+
+                for(let i=0; i<arr2.length; i++){
+                    if(arr2[i]%2==0){
+                        newArr2.unshift(arr2[i]);
+                    }
+                }
+                console.log(newArr2);
+            </script>
+        </body>
+    </main>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title></title>
+        </head>
+    </header>
+    <main>
+        <body>
+            <script>
+                function SOD(num){
+                    let sum=0,remainder;
+                    while(num!=0){
+                       remainder = num%10;
+                       sum += remainder;
+                       num = parseInt(num/10); 
+                    }
+                    return sum;
+                }
+                console.log(SOD(24681));
+            </script>
+        </body>
+    </main>
+</html>

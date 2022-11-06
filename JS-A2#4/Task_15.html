@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <head>
+            <title>Reduce</title>
+        </head>
+    </header>
+    <main>
+        <body>
+           <script>
+            const arr = ["Steve","Bob","John","Hannah"];
+
+            let newArr1 = arr.reduce(function(acc,cv){
+                return acc+cv+"::";
+            },"");
+
+            console.log(newArr1)
+           </script>
+
+           <script>
+            let newArr2 = arr.reduce(function(acc,cv){
+                return acc+cv.length;
+            },0);
+
+            console.log(newArr2)
+           </script>
+
+           <script>
+            let newArr3 = arr.reduce(function(acc,cv){
+                return acc+cv[0];
+            },"");
+
+            console.log(newArr3)
+           </script>
+        </body>
+    </main>
+</html>
